@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>NodeJS Conference 2017</title>
+
+		<meta name="description" content="React.js Intro">
+		<meta name="author" content="Daniela Popescu">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+    <style>
+    .reveal p.small {
+      text-align: left;
+      font-size: 0.9em;
+      margin-top: 25px;
+    }
+    </style>
+
+		<!-- For syntax highlighting -->
+		<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+    <link rel="stylesheet" href="css/prism.css" data-noprefix />
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+	
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3>NodeJS Conference 2017</h3>
+          
+          <p>Thoughts and notes</p>
+          <ul>
+            <li><strong>General notes</strong></li>
+            <li><strong>Venue</strong></li>
+            <li><strong>Talks</strong>
+              <ul>
+                <li>Dana</li>
+                <li>Ali</li>
+              </ul>
+            </li>
+          </ul>
+				</section>
+        <section>
+          <h2>General notes</h2>
+          <ul>
+            <li>Very sponsor oriented</li>
+            <li>6 opening keynotes and 7 closing notes (usually there's one opening and one closing)</li>
+            <li>Most of the talks were promoting one module or other</li>
+            <li>Very fast paced: 30 minutes sessions with 10  minutes breaks in between</li>
+            <li>Refreshing to see diversity among speakers, note speakers, and participants</li>
+            <li>Sad to see lots of inexperiences presenters</li>
+            <li>Code & Learn session !!! dissapointing !!!!</li>
+          </ul>
+        </section>
+				<section>
+            <h2>Venue</h2>
+            <ul>
+              <li>Canada Place in the heart of Vancouver</li>
+              <li>Vancouver city is an awesome blend of nature and cosmopolitan</li>
+              <li>Everybody should visit at least once</li>
+              <li>Picture</li>
+            </ul>
+            <!-- <pre class="command-line"
+                  data-user="dpopes"
+                  data-host="localhost" data-output="2-3"><code class="language-bash">$ jsx /source /destination
+built Module("Main")
+["App","Main"]</code>
+                </pre> -->
+				</section>
+        <section>
+          <h2>The sessions</h2>
+          <div><img src="img/sessions.png"></div>
+        </section>
+        
+        <section>
+          <section>
+            <h2>Ali's talks</h2>
+          </section>
+          
+          <section>
+            <div>
+              <!-- Add talks here -->
+              <h3>Talk 1 title</h3>
+              <p>Talk description</p>
+              <p><a href="#">Link to presentation deck if available</a></p>
+              
+              <!-- Example of pre code -->
+              <pre>
+                <code class="language-jsx">
+                  var Field = React.createClass({
+                      render: function() {
+                        return (&lt;p>
+                                    &lt;label>{this.props.children}&lt;/label>
+                                    &lt;input type="text" value="" />
+                                  &lt;/p>
+                        );
+                     }
+                  });
+                </code>
+              </pre>
+            </div>
+          </section>
+        </section>
+        
+        <section>
+          <section>
+            <h2>Dana's talks</h2>
+          </section>
+          
+          <section>
+            <div>
+              <!-- My talks will be here -->
+              <h3>Talk 1 title</h3>
+              <p>Talk description</p>
+              <p><a href="#">Link to presentation deck if available</a></p>
+            </div>
+          </section>
+        </section>
+        
+        <section>
+          <h2>Conclusion</h2>
+        </section>
+        
+			</div>
+
+		</div>
+
+		<script src="js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				 //parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-11.jpg',
+         parallaxBackgroundImage: 'img/parallax10.jpg',
+				 parallaxBackgroundSize: '2560px 1600px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/prism/prism.js', async: true, callback: function() { Prism.highlightAll();} },
+					//{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
