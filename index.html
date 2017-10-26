@@ -32,7 +32,7 @@
 		<script>
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
-	
+
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -46,7 +46,7 @@
 			<div class="slides">
 				<section>
 					<h3>NodeJS Conference 2017</h3>
-          
+
           <p>Thoughts and notes</p>
           <ul>
             <li><strong>General notes</strong></li>
@@ -69,7 +69,7 @@
             <li>Very fast paced: 30 minutes sessions with 10  minutes breaks in between</li>
             <li>Refreshing to see diversity among speakers, note speakers, and participants</li>
             <li>Sad to see lots of inexperiences presenters</li>
-            <li>Code & Learn session !!! dissapointing !!!!</li>
+            <li>Code &smp; Learn session !!! dissapointing !!!!</li>
           </ul>
         </section>
 				<section>
@@ -81,6 +81,8 @@
               <li>Should add some pretty pictures of the city</li>
               <li>Maybe mention something about the people too</li>
             </ul>
+            <img src="img/vancouver-pano.jpg" alt="Panarama of Vancouver from a distance">
+            <img src="img/event-center.jpg" alt="Edge of Event Center and view of mountains">
             <!-- <pre class="command-line"
                   data-user="dpopes"
                   data-host="localhost" data-output="2-3"><code class="language-bash">$ jsx /source /destination
@@ -92,42 +94,95 @@ built Module("Main")
           <h2>The sessions</h2>
           <div><img src="img/sessions.png"></div>
         </section>
-        
+
         <section>
           <section>
             <h2>Ali's talks</h2>
+            <ul>
+              <li>Logging - Winston was updated to use streams, use `winston@next`!</li>
+              <li>Microservices - use our yeoman nodeserver generator `yo nodeserver`!</li>
+              <li>Don't Starve the Event Loop - find a balence between all the ways to optimize</li>
+              <li>JS Ecosystem - tips and tricks within JS and node</li>
+              <li>Hooray Arrays - Everything and more about arrays</li>
+              <li>Future is Serverless, what that means for node - use funcpack to configure web pack on a project</li>
+              <li>Memory Leaks - how to debug a memory leak</li>
+              <li>Closures - how to and when to</li>
+              <li>Async Hooks - a module to help you track async functions</li>
+              <li>*Keynotes - what's next for node</li>
+            </ul>
           </section>
-          
+
           <section>
             <div>
               <!-- Add talks here -->
-              <h3>Talk 1 title</h3>
-              <p>Talk description</p>
-              <p><a href="#">Link to presentation deck if available</a></p>
-              
-              <!-- Example of pre code -->
-              <pre>
-                <code class="language-jsx">
-                  var Field = React.createClass({
-                      render: function() {
-                        return (&lt;p>
-                                    &lt;label>{this.props.children}&lt;/label>
-                                    &lt;input type="text" value="" />
-                                  &lt;/p>
-                        );
-                     }
-                  });
-                </code>
-              </pre>
+              <h3>Your Brain is Conspiring Agasint You</h3>
+              <p>Tips and tricks to help make us better developers</p>
+              <p><a href="http://jenna.is/slides/at-nina.pdf">http://jenna.is/slides/at-nina.pdf</a></p>
+
+              <ul>
+                <li>Take breaks!</li>
+                <li>Ask questions that counter our hypothesis</li>
+                <li>Debug with a partner</li>
+                <li>Bad at estimating - under/over</li>
+                <li>Motivated by loss</li>
+                <li>Helpless to the processing power of our brains</li>
+                <li>Be more empathetic</li>
+                <li>Reliant on our own examples</li>
+                <li>Ikea Effect - don't re-invent the wheel</li>
+                <li>Coctail Party Effect - process everything</li>
+                <li>Imposter Syndrome (sucessful women)</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <!-- My talks will be here -->
+              <h3>Kill All Humans</h3>
+              <p>How to deal with npm versions, releases, and updates</p>
+              <ul>
+                <li>Semantic Versioning<ul><li>breaking.feature.fix</li></ul></li>
+                <li>Break versions not code!</li>
+                <li>Semantic Release - give you a rigid setup for versioning and releasing</li>
+                <li>`npm outdated`</li>
+                <li>greenkeeper.io - dependency management with travis CI</li>
+                <li>Do not do any security updates without up-to-date dependencies</li>
+                <li>Create a schedule for dependency updates</li>
+              </ul>
             </div>
           </section>
         </section>
-        
+
+        <section>
+            <div>
+              <!-- My talks will be here -->
+              <h3>The State of Node Security</h3>
+              <p>Where node stands security-wise</p>
+              <ul>
+                <li>Examples of security attacks:
+                  <ul>
+                    <li>Directory traversal</li>
+                    <li>Cross-site scripting (angular)</li>
+                    <li>typosquatting</li>
+                    <li>Regular Expression denial of service</li>
+                  </ul>
+                </li>
+                <li>Create public facing disclosure policy</li>
+                <li>Create a `security.txt` file that defines how users can report security issues</li>
+                <li>Deprecate the version with the security issue</li>
+                <li>Use Snyk, or nsp</li>
+              </ul>
+            </div>
+          </section>
+        </section>
+
+        </section>
+
         <section>
           <section>
             <h2>Dana's talks</h2>
           </section>
-          
+
           <section>
             <div>
               <!-- My talks will be here -->
@@ -137,12 +192,12 @@ built Module("Main")
             </div>
           </section>
         </section>
-        
+
         <section>
           <h2>Conclusion</h2>
-          <p>We gotta work on it together. Personally I'd say something along the line that NodeJS is still in its infancy and they have to get it together if we want to go to another conference again. Or maybe say something about one of us's participation as a presenter. Not to be mean, but our presentation skills are much better and sugarcoat would make a great presentation even if it's not final.</li>
+          <p>We gotta work on it together. Personally I'd say something along the line that NodeJS Interactive is still in its infancy and they have to get it together if we want to go to another conference again. Or maybe say something about one of us's participation as a presenter. Not to be mean, but our presentation skills are much better and sugarcoat would make a great presentation even if it's not final.</li>
         </section>
-        
+
 			</div>
 
 		</div>
