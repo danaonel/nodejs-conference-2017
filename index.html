@@ -22,6 +22,40 @@
       font-size: 0.9em;
       margin-top: 25px;
     }
+    .reveal span.small {
+      display: block;
+      padding-bottom: 15px;
+      font-size: 0.5em;
+      line-height: 1;
+      text-align: center;
+    }
+    .reveal .by {
+      text-align: right;
+      font-size: 0.9em;
+    }
+    .reveal td img {
+      display: block;
+    }
+    .reveal table {
+      margin: 0 auto;
+    }
+    
+    .reveal .schedule {
+      margin: 0 auto;
+      padding: 0;
+      border-collapse: collapse;
+      border: none;
+      font-size: 0.5em;
+    }
+    .reveal .schedule td {
+      padding: 0 30px;
+    }
+    .reveal .keynotes {
+      background-color: #ff5436;
+    }
+    .reveal .code-learn {
+      background-color: #b7cdff;
+    }
     </style>
 
 		<!-- For syntax highlighting -->
@@ -68,21 +102,66 @@
             <li>Most of the talks were promoting one module or other</li>
             <li>Very fast paced: 30 minutes sessions with 10  minutes breaks in between</li>
             <li>Refreshing to see diversity among speakers, note speakers, and participants</li>
-            <li>Sad to see lots of inexperiences presenters</li>
-            <li>Code &smp; Learn session !!! dissapointing !!!!</li>
+            <li>Sad to see lots of inexperienced presenters</li>
+            <li>Code &amp; Learn session !!! dissapointing !!!!</li>
           </ul>
         </section>
 				<section>
+          <section>
             <h2>Venue</h2>
             <ul>
               <li>Canada Place in the heart of Vancouver</li>
               <li>Vancouver city is an awesome blend of nature and cosmopolitan</li>
               <li>Everybody should visit at least once</li>
-              <li>Should add some pretty pictures of the city</li>
-              <li>Maybe mention something about the people too</li>
             </ul>
+          </section>
+          <section>
+            <h2>The Conference</h2>
+            <table>
+              <tr>
+                <td><img src="img/conference/IMG_4169.JPG" alt="One of the many opening key notes"></td>
+                <td><img src="img/conference/IMG_4173.JPG" alt="The vendor area"></td>
+              </tr>
+              <tr>
+                <td><span class="small">One of the many<br>opening key notes</span></td>
+                <td><span class="small">The vendor area</span></td>
+              </tr>
+              <tr>
+                <td><img src="img/conference/IMG_4171.JPG" alt="Jenga"></td>
+                <td><img src="img/conference/IMG_4176.JPG" alt="Jello shots"></td>
+              </tr>
+              <tr>
+                <td><span class="small">Nerd Jenga</span></td>
+                <td><span class="small">Jello shots</span></td>
+              </tr>
+            </table>
+          </section>
+          <section>
+            <h2>The Conference (cont.)</h2>
+            <img src="img/conference/IMG_4165.JPG" alt="Ali">
+            <span class="small">Ali at the opening key note</span>
+          </section>
+          <section>
+            <h2>The City</h2>
             <img src="img/vancouver-pano.jpg" alt="Panarama of Vancouver from a distance">
+            <span class="small">Panarama of Vancouver from Stanley Park</span>
+          </section>
+          <section>
+            <h2>The City (cont.)</h2>
             <img src="img/event-center.jpg" alt="Edge of Event Center and view of mountains">
+            <span class="small">Edge of Event Center and view of mountains</span>
+          </section>
+          <section>
+            <h2>The City (cont.)</h2>
+            <table>
+              <tr>
+                <td><img src="img/city/IMG_4184.JPG" alt="Gastown Steam clock"><span class="small">Steam clock in Gastown</span></td>
+                <td><img src="img/city/IMG_4190.JPG" alt="Vancouver Lookout"><span class="small">Vancouver Lookout</span></td>
+                <td><img src="img/city/IMG_4204.JPG" alt="Vancouver Harbor"><span class="small">Vancouver Harbor</span></td>
+              </tr>
+            </table>
+            
+          </section>
             <!-- <pre class="command-line"
                   data-user="dpopes"
                   data-host="localhost" data-output="2-3"><code class="language-bash">$ jsx /source /destination
@@ -91,8 +170,9 @@ built Module("Main")
                 </pre> -->
 				</section>
         <section>
-          <h2>The sessions</h2>
-          <div><img src="img/sessions.png"></div>
+          <h2>Schedule</h2>
+          <p><a href="all-sessions.html" target="_blank">All sessions</a></p>
+          <p><a href="our-sessions.html" target="_blank">Attended sessions</a></p>
         </section>
 
         <section>
@@ -151,11 +231,9 @@ built Module("Main")
               </ul>
             </div>
           </section>
-        </section>
 
-        <section>
+          <section>
             <div>
-              <!-- My talks will be here -->
               <h3>The State of Node Security</h3>
               <p>Where node stands security-wise</p>
               <ul>
@@ -176,8 +254,6 @@ built Module("Main")
           </section>
         </section>
 
-        </section>
-
         <section>
           <section>
             <h2>Dana's talks</h2>
@@ -186,16 +262,122 @@ built Module("Main")
           <section>
             <div>
               <!-- My talks will be here -->
-              <h3>Talk 1 title</h3>
-              <p>Talk description</p>
-              <p><a href="#">Link to presentation deck if available</a></p>
+              <h3>Functionality Abuse:<br>The Forgotten Class of Attacks</h3>
+              <p class="by"> - Nwokedi Idika, Google</p>
+              <ul>
+                <li>We are primed to think that web security issues are by implementation flaws and are a given</li>
+                <li>Importance of having security policy</li>
+                <li>Threat modeling</li>
+                <li>Common security issues: SQL injections, cross site scripting (XSS), "code issues"</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <div>
+              <h3>Node And Learn:<br>How to Create a Local Node.js Community</h3>
+              <p class="by"> - Yosuke Furukawa, Recruit Technologies</p>
+              <ul>
+                <li>The speaker spoke from his experience in creating a diverse Nodejs community in Japan</li>
+                <li>The role of a community is to:
+                  <ul>
+                    <li>Keep you motivated to continue to learn and contribute to the Nodejs ecosystem</li>
+                    <li>Nurture Javascript beginners</li>
+                  </ul>
+                </li>
+                <li>A community should strive to be more global and more interactive</li>
+                <li>Advice: create a <a href="https://nodejs.org/en/get-involved/" target="_blank">Node Discussion</a> to create a stable node community</li>
+                <li>Japan Nodejs community: doubled from 2014 to 2016</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <div>
+              <h3>The JS Ecosystem: Making Sense of the Madness</h3>
+              <p class="by"> - Ethan Brown, Pop Art</p>
+              <p><a href="http://jseco.zepln.com/" target="_blank">Deck</a></p>
+              <ul>
+                <li>Ecosystem
+                  <ul>
+                    <li>Web server side: Express, Node</li>
+                    <li>Web apps side: Angular, React, Vue, Webpack, Babel</li>
+                    <li>Languages that compile to JS: ClosureScript, TypeScript, Elm</li>
+                    <li>IoT space: Node, IoT</li>
+                    <li>Native development: ReactNative (react), NativeScript (angular)</li>
+                    <li>Other: WebAssembly</li>
+                  </ul>
+                </li>
+                <li>ES6 - syntactic sugar to look for: Arrays functions, Object spread, Destructuring, property shorthand, promises, string templates, async/awais, class fields, export/import modules</li>
+                <li>Paradigms: functional programming</li>
+                <li>One way data binding: Redus</li>
+                <li>Immutability (Natural fit for functional programming)</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <div>
+              <h3>Understanding and Debugging Memory Leaks in Your Node.js Applications</h3>
+              <p class="by"> - Ali Sheikh, Google</p>
+              <p><a href="https://goo.gl/Chdxow" target="_blank">Deck</a></p>
+              <ul>
+                <li>Memory leaks happen when expected short living objects are attached to long lived ones.</li>
+                <li>Garbage Collection should remove only stuff that’s not used anywhere. Unfortunately it is not always effective.</li> 
+                <li>Debugging tools for JavaScript leaks:
+                  <ul>
+                    <li>process.memoryUsage()</li>
+                    <li>heap snapshots (Memory tab in chrome)</li>
+                    <li>Allocation timeline</li>
+                    <li>V8 Heap Statistics</li>
+                  </ul>
+                </li>
+                <li>Native leaks: native addons, nodejs code bits written in C++, V8</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <div>
+              <h3>Other sessions</h3>
+              <ul>
+                <li>A Brief History of Streams - Jessica Quynh Tran
+                  <ul>
+                    <li>It was more of a philosophical talk, rather than techinical</li>
+                  </ul>
+                </li>
+                <li>Programming Best Practices: Memory Efficiency with Closures [I] - Gireesh Punathil, IBM India Pvt Ltd
+                  <ul>
+                    <li>Keyword: scope</li>
+                    <li><a href="https://schd.ws/hosted_files/nina17/14/MemoryEfficiencyWithClosures.pdf" target="_blank">Deck</a></li>
+                  </ul>
+                </li> 
+                <li>WebAssembly and the Future of the Web [I] - Athan Reines, Independent Software Engineer
+                  <ul>
+                    <li>Compiler that takes other languages and converts them to an assembly which is then converted to web format</li>
+                    <li>Text format and binary format</li>
+                    <li>Value types: i32, f32, i64, f64</li>
+                    <li><a href="https://github.com/stdlib-js/stdlib" target="_blank">Github</a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </section>
         </section>
 
         <section>
-          <h2>Conclusion</h2>
-          <p>We gotta work on it together. Personally I'd say something along the line that NodeJS Interactive is still in its infancy and they have to get it together if we want to go to another conference again. Or maybe say something about one of us's participation as a presenter. Not to be mean, but our presentation skills are much better and sugarcoat would make a great presentation even if it's not final.</li>
+          <section>
+            <h2>Conclusion</h2>
+            <ul>
+              <li>It's the second NodeJS Interactive conference and there's still lots of improvement that's needed.</li>
+              <li>We should present Sugarcoat at the next NodeJs conference.<br>Why not?</li>
+              <li>Would I go again?
+                <ul>
+                  <li>Dana: Probably yes, but only after I get more Nodejs experience.</li>
+                  <li>Ali: </li>
+                </ul>
+            </ul>
+          </section>
+          <section>
+            <img src="img/dana-ali.jpg" height="600">
+            <span class="small">In front of Canada Place</span>
+          </section>
         </section>
 
 			</div>
